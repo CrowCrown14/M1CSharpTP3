@@ -94,9 +94,14 @@ namespace TP3
 
         static void exercice2()
         {
-            Thread th1 = new Thread(new ThreadStart(ps3));
+            Thread th1 = new Thread(new ThreadStart(ps1));
             th1.Start();
 
+            Thread th2 = new Thread(new ThreadStart(ps2));
+            th2.Start();
+
+            Thread th3 = new Thread(new ThreadStart(ps3));
+            th3.Start();
         }
 
         static void ps1()
